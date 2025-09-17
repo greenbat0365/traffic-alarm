@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* background: white; */
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
+.calendar {
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 4px;
+  background: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 10px;
+  background: rgb(221, 221, 221);
+  margin-bottom: 10px;
+}
+.header > button {
+  background: none;
+  border: none;
+}
+
+.weekday {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  background: rgba(221, 221, 221, 0.514);
+  border-radius: 4px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  /*    padding-top: 10px; */
+
+  /*  border: 1px solid black; */
+
+  background: rgba(221, 221, 221, 0.219);
+/*   justify-items: stretch;
+  align-items: stretch; */
+
+/*   justify-items: center;
+  align-items: center; */
+}
+.date {
+  padding: 5px;
+  background: white;
+  min-height: 4rem;
+}
+.dateSelected {
+  background-color: rgb(134, 148, 228);
+  color: white;
+}
+
+.dateSelecting {
+  background-color: lightblue;
+}
+
+.footer {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shift-time {
+  font-size: 0.75rem;
+
+  color: #333;
+  margin-top: 5px;
+  background-color: #e0f7fa;
+  padding: 2px 4px;
+
+  border: 1px solid #4caf50;
+  text-align: center;
+  border-radius: 3px;
+}
+@media (max-width: 434px) {
+  .shift-time {
+    font-size: 0.5rem; 
+  }
+}
+
+.delete-button {
+  /*    display: none; */
+  display: inline-block;
+
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  /*   transform: translateY(-50%); */
+}
+
+.shift-time:hover .delete-button {
+  color: rgb(240, 122, 122);
+}

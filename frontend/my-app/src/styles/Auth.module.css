@@ -1,0 +1,100 @@
+/* Auth.module.css */
+.wrapper {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 450px;
+    background: white;
+    border-radius: 8px;
+    /* padding: 20px; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tabContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1px; */
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 0.5px solid #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .activeTab {
+    background: rgb(134, 148, 228);
+    color: white;
+  }
+  
+  .formContainer {
+    /* border: 1px solid black; */
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  .formFooter {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link {
+    font-size: 14px;
+    color: rgb(134, 148, 228);
+    text-decoration: none;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background-color: rgb(134, 148, 228);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

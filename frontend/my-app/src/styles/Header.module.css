@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.greeting {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin: 0; 
+    cursor: pointer;
+    /* border: 1px solid black; */
+    display: flex;
+  /*   flex-direction: row; */
+    position: relative;
+    /* font-size: 0.5rem; */
+    
+}
+
+.logout {
+  position: absolute;
+  top: 100%; 
+  right: 0; 
+  width: 100%;
+
+}

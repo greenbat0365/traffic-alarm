@@ -1,0 +1,74 @@
+/* Map.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mapWrapper {
+    height: 200px;
+    /* width: 800px; */
+    /* border: 1px solid black; */
+    /* margin-bottom: 20px; */
+  }
+
+  .wrapper {
+    background: white;
+    padding: 20px;
+    width:95%;
+    max-width: 800px; 
+     
+     border-radius: 4px;
+
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* width: 800px; */
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 4px;
+  }
+  
+  .inputGroup {
+    flex: 1 1 300px;
+    /* border-radius: 4px; */
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    align-items: flex-end;
+    
+  }
+  
+  .updateButton {
+    padding: 8px 16px;
+    background-color: rgb(134, 148, 228);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
