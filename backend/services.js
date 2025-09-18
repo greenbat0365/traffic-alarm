@@ -40,8 +40,8 @@ const getTrafficTime = async (start, end) => {
 
 const sendTrafficEmail = async (resend, email, traffic) => {
   const { error } = await resend.emails.send({
-    from: "TrafficAlarm <onboarding@resend.dev>",
-    to: [email],
+    from: "TrafficAlarm <alerts@traffic-alarm.com>",
+    to: [email]/* 'harik0365@gmail.com' */,
     subject: "Traffic Alert",
     html: `<strong>The traffic/travel time on your route is currently ${traffic}</strong>`,
   });

@@ -14,7 +14,7 @@ import {
   notifyBackendSchedule,
 } from "../services/shiftService.js";
 
-const ENDPOINT = "https://3000-idx-trafficalarm-1743060254761.cluster-nx3nmmkbnfe54q3dd4pfbgilpc.cloudworkstations.dev/api/schedule"
+const ENDPOINT = "http://localhost:3000/api/schedule"
 
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
