@@ -35,6 +35,7 @@ const getTrafficTime = async (start, end) => {
   console.log("Start Location:", start);
   console.log("End Location:", end);
   const data = await response.json();
+  console.log("Google Maps API response data:", data);
 
   const traffic = data.rows?.[0]?.elements?.[0]?.duration_in_traffic?.text;
 
