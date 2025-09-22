@@ -27,6 +27,14 @@ const getTrafficTime = async (start, end) => {
   const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(start)}&destinations=${encodeURIComponent(end)}&departure_time=now&key=${googleApiKey}`;
 
   const response = await fetch(url);
+  console.log("Google Maps API response status:", response.status);
+  console.log("Google Maps API response headers:", response.headers.raw());
+  console.log("Google Maps API response body:", await response.clone().text());
+  console.log("Google Maps API URL:", url);
+  console.log("Google Maps API Key:", googleApiKey ? "Present" : "Missing");
+  console.log("Start Location:", start);
+  console.log("End Location:", end);
+  console.log("Full Response:", await response.clone().json());
   const data = await response.json();
 
   const traffic = data.rows?.[0]?.elements?.[0]?.duration_in_traffic?.text;
