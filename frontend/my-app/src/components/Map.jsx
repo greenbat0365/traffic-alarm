@@ -18,7 +18,7 @@ const Map = () => {
   const endAutocompleteRef = useRef(null);
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDCB_uw54Rnemd_pr81bwFTlNB3i_xD8HA",
+    googleMapsApiKey: "AIzaSyCT3lUKLhF3tsOg0hlcWkNvgFs5WoAmEVE",
     libraries: ["places"], 
   });
 
