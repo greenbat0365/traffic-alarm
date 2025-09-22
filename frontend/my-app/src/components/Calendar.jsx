@@ -14,7 +14,7 @@ import {
   notifyBackendSchedule,
 } from "../services/shiftService.js";
 
-const ENDPOINT = "http://localhost:3000/api/schedule"
+const ENDPOINT = "https://traffic-alarm.onrender.com/api/schedule"
 
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
