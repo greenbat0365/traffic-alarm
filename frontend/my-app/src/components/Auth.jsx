@@ -158,6 +158,7 @@ function Auth() {
         message={notifMessage}
         severity={notifSeverity}
         onClose={() => setNotifOpen(false)}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
       />
     </div>
   );
