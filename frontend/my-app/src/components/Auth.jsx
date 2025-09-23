@@ -56,10 +56,10 @@ function Auth() {
     <div className={styles.wrapper}>
       <div className={styles.card}>
         <div className={styles.header}>
-          <h2 style={{ fontSize: "20px", fontWeight: "normal" }}>TenTalk</h2>
-          <button onClick={onClose} className={styles.closeBtn}>
+          <h2 style={{ fontSize: "20px", fontWeight: "normal" }}>Traffic Alarm</h2>
+{/*           <button onClick={onClose} className={styles.closeBtn}>
             ✕
-          </button>
+          </button> */}
         </div>
 
         {/* Tabs */}
