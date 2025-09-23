@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import auth from "../supabase/auth";
 import styles from "../styles/Auth.module.css";
-import MUINotification from "./MUINotification";
+import MUINotification from "./NotificationMui";
 
 function Auth() {
   const [activeTab, setActiveTab] = useState("login");
