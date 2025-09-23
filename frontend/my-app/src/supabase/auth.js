@@ -2,16 +2,24 @@ import supabase from "./supabase";
 
 
 async function signUp(email, password) {
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    if (error) console.error('Error signing up:', error);
-    else console.log('Sign up successful:', data);
+const { data, error } = await supabase.auth.signUp({ email, password });
+    if (error) {
+        console.error("Error signing up:", error);
+        return false;
+      }
+      console.log("Sign up successful:", data);
+      return true;
   }
   
 
   async function signIn(email, password) {
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) console.error('Error signing in:', error);
-    else console.log('Sign in successful:', data);
+    if (error) {
+        console.error("Error signing up:", error);
+        return false;
+      }
+      console.log("Sign up successful:", data);
+      return true;
   }
   
   async function signOut() {

@@ -8,7 +8,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 const MUINotification = ({ open, message, severity, onClose }) => {
   return (
-    <Snackbar open={open} autoHideDuration={6000} onClose={onClose}>
+    <Snackbar open={open} autoHideDuration={6000} onClose={onClose}  anchorOrigin={{ vertical: "top", horizontal: "center" }}>
       <Alert onClose={onClose} severity={severity || "success"} sx={{ width: '100%' }}>
         {message}
       </Alert>

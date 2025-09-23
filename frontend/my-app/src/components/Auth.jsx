@@ -3,16 +3,15 @@ import auth from "../supabase/auth";
 import styles from "../styles/Auth.module.css";
 import MUINotification from "./NotificationMui";
 
-function Auth() {
+
+function Auth({onNotify}) {
+  
   const [activeTab, setActiveTab] = useState("login");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [signupEmail, setSignupEmail] = useState("");
   const [signupPassword, setSignupPassword] = useState("");
 
-  const [notifOpen, setNotifOpen] = useState(false);
-  const [notifMessage, setNotifMessage] = useState("");
-  const [notifSeverity, setNotifSeverity] = useState("success");
 
   const handleTabSwitch = (tab) => {
     if (tab === "login") {
@@ -28,27 +27,35 @@ function Auth() {
   async function handleSignUp() {
     const success = await auth.signUp(signupEmail, signupPassword);
     if (success) {
-      setNotifMessage("Account created! Please confirm your email address and log in using your credentials.");
+/*       setNotifMessage("Account created! Please confirm your email address and log in using your credentials.");
       setNotifSeverity("success");
-      setNotifOpen(true);
+      setNotifOpen(true); */
+
+      if(onNotify) onNotify("Account created! Please confirm your email address and log in using your credentials.", "success");
     } else {
-      setNotifMessage("Sign-up failed. Please try again.");
-      setNotifSeverity("error");
-      setNotifOpen(true);
+
+
+        if (onNotify) onNotify("Sign-up failed. Please try again.", "error");
     }
   }
 
   async function handleSignIn() {
     const success = await auth.signIn(loginEmail, loginPassword);
     if (success) {
-      setNotifMessage("Logged in successfully!");
+/*       setNotifMessage("Logged in successfully!");
       setNotifSeverity("success");
-      setNotifOpen(true);
+      setNotifOpen(true); */
+
+       onNotify("Logged in successfully!", "success");
+
+       
       
     } else {
-      setNotifMessage("Invalid credentials or you have not confirmed your email after sign up. Please try again.");
+/*       setNotifMessage("Invalid credentials or you have not confirmed your email after sign up. Please try again.");
       setNotifSeverity("error");
-      setNotifOpen(true);
+      setNotifOpen(true); */
+
+      if(onNotify) onNotify("Invalid credentials or you have not confirmed your email after sign up. Please try again.", "error");
     }
   }
 
@@ -153,13 +160,13 @@ function Auth() {
       </div>
 
       {/* Notification */}
-      <MUINotification
+{/*       <MUINotification
         open={notifOpen}
         message={notifMessage}
         severity={notifSeverity}
         onClose={() => setNotifOpen(false)}
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-      />
+      /> */}
     </div>
   );
 }
