@@ -157,7 +157,7 @@ function Auth() {
         open={notifOpen}
         message={notifMessage}
         severity={notifSeverity}
-        /* onClose={() => setNotifOpen(false)} */
+        onClose={() => setNotifOpen(false)}
       />
     </div>
   );
