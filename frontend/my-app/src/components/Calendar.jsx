@@ -141,6 +141,7 @@ const Calendar = () => {
             selectedDateStart={selectedDateStart}
             setSelectedDateEnd={setSelectedDateEnd}
             selectedTime={selectedTime}
+             selectedDateEnd={selectedDateEnd}
             setSelectedTime={setSelectedTime}
             handleSubmit={handleSubmit}
           />

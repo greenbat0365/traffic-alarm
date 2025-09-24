@@ -11,7 +11,7 @@ const CalendarFooter =({selectedDateStart,selectedDateEnd, selectedTime, setSele
               onChange={(e) => setSelectedTime(e.target.value)}
             ></input>
             <p>
-              {selectedTime} shift selected for {selectedDateStart}
+              {selectedTime} shift selected for {selectedDateStart} 
               {selectedDateEnd ? "-" + selectedDateEnd : null}
             </p>
             <button onClick={handleSubmit}>Submit</button>
