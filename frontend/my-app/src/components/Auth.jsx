@@ -147,6 +147,10 @@ function Auth({onNotify}) {
                   placeholder="Enter your password"
                 />
               </div>
+               <p style={{ fontSize: "12px", color: "#666", marginBottom: "10px" }}>
+      We require email verification because the app uses email notifications. 
+      Please provide a valid email so we can send you alerts.
+    </p>
 
               <div className={styles.formFooter}>
                 <div></div>
