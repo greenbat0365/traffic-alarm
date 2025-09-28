@@ -44,7 +44,7 @@ Traffic Alarm is a full‑stack web app that helps users schedule their work shi
 
 ```bash
 git clone https://github.com/greenbat0365/traffic-alarm.git
-cd tentalk
+cd traffic-alarm
 ```
 
 2. **Install dependencies**
