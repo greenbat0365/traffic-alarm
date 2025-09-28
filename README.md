@@ -1,6 +1,6 @@
-# Tentalk
+# Traffic Alarm
 
-Tentalk is a full‑stack web app that helps users schedule their work shifts and get real‑time traffic alerts before leaving for work. It combines a React frontend, an Express backend, Supabase for authentication and data storage, and Google Maps APIs for traffic estimation.
+Traffic Alarm is a full‑stack web app that helps users schedule their work shifts and get real‑time traffic alerts before leaving for work. It combines a React frontend, an Express backend, Supabase for authentication and data storage, and Google Maps APIs for traffic estimation.
 
 ---
 
@@ -43,7 +43,7 @@ Tentalk is a full‑stack web app that helps users schedule their work shifts an
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/greenbat0365/tentalk.git
+git clone https://github.com/greenbat0365/traffic-alarm.git
 cd tentalk
 ```
 
@@ -95,7 +95,7 @@ Visit `http://localhost:5173` (or the port Vite assigns) to view the app.
 ## 📁 Project Structure
 
 ```
-tentalk/
+traffic-alarm/
 ├── backend/         # Express backend server
 │   ├── index.js
 │   ├── package.json
@@ -112,8 +112,8 @@ tentalk/
 
 ## 🔗 Live Demo
 
-- **Frontend:** [https://tentalk.onrender.com](https://tentalk.onrender.com)
-- **Backend:** [https://tentalk-api.onrender.com](https://tentalk-api.onrender.com)
+- **Frontend:** [https://traffic-alarm-1.onrender.com](https://traffic-alarm-1.onrender.com)
+- **Backend:** [https://traffic-alarm.onrender.com](https://traffic-alarm.onrender.com)
 
 ---
 
